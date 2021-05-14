@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: left -50vw top -50vw, right -50vw bottom -50vw;
+  background-repeat: no-repeat;
+  background-size: 100vw, 100vw;
+}
+
+body .card {
+  position: relative;
+  background-color: white;
+  width: 85vw;
+  height: 75vh;
+  border-radius: 20px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 3fr 0.1fr 1.5fr;
+      grid-template-rows: 3fr 3fr 0.1fr 1.5fr;
+  box-shadow: 0px 0px 51px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 51px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 51px -7px rgba(66, 53, 53, 0.75);
+}
+
+@media screen and (min-width: 600px) {
+  body .card {
+    width: 500px;
+    margin: auto;
+  }
+}
+
+body .card .cover-image {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+body .card .cover-image .profile-pic {
+  position: relative;
+  top: 70%;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: solid 5px white;
+  margin: auto;
+  background-image: url("../images/image-victor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .card .personal-info {
+  position: relative;
+  top: 55%;
+}
+
+body .card .account-info .border {
+  background-color: #969696;
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+}
+
+body .card .account-info .info-list {
+  position: relative;
+  top: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+p {
+  font-size: 35px;
+  font-family: "Kumbh Sans", "sans-serif";
+  font-weight: 700;
+}
+
+span {
+  color: #969696;
+  font-weight: 400;
+}
+
+.stats, .place {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
