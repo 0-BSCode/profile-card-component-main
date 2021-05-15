@@ -55,6 +55,7 @@ body .card {
 @media screen and (min-width: 700px) {
   body .card {
     width: 600px;
+    height: 650px;
     margin: auto;
   }
 }
