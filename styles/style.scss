@@ -17,9 +17,14 @@ body {
     background-color: $dark-cyan;
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
     // background-position: left -200px top -200px, right -200px bottom -200px;
-    background-position: left -50vw top -50vw, right -50vw bottom -50vw;
+    background-position: left -50vw top -40vh, right -50vw bottom -40vh;
     background-repeat: no-repeat;
-    background-size: 100vw, 100vw;
+    background-size: 100%, 100%;
+
+    @media screen and (min-width: 800px){
+        background-size: 60%, 60%;
+        background-position: left -20vw top -60vh, right -20vw bottom -60vh;
+    }
 
     .card {
         position: relative;
@@ -35,8 +40,8 @@ body {
         -webkit-box-shadow: 0px 0px 51px -7px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 51px -7px rgba(66, 53, 53, 0.75);
         
-        @media screen and (min-width: 600px){
-            width: 500px;
+        @media screen and (min-width: 700px){
+            width: 600px;
             margin: auto;
         }
         
@@ -48,9 +53,9 @@ body {
 
             .profile-pic {
                 position: relative;
-                top: 70%;
-                height: 130px;
-                width: 130px;
+                top: 65%;
+                height: 150px;
+                width: 150px;
                 border-radius: 50%;
                 border: solid 5px white;
                 margin: auto;
